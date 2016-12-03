@@ -1,11 +1,11 @@
 {
   "vendor": {
-    "js": "/https://github.com/rNexeR/SpotterSaver/vendor.bundle.js"
+    "js": "/SpotterSaver/vendor.bundle.js"
   },
   "main": {
-    "js": "/https://github.com/rNexeR/SpotterSaver/main.bundle.js"
+    "js": "/SpotterSaver/main.bundle.js"
   },
   "polyfills": {
-    "js": "/https://github.com/rNexeR/SpotterSaver/polyfills.bundle.js"
+    "js": "/SpotterSaver/polyfills.bundle.js"
   }
 }
