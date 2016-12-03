@@ -12,7 +12,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  template: `  	<router-outlet></router-outlet>
+  template: `	
+  				<router-outlet></router-outlet>
              `,
   styleUrls: [	'../assets/bootstrap/css/bootstrap.css',
 			  	'../assets/elegant-font/code/style.css',

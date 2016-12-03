@@ -13,11 +13,17 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './components/logged/home/home.component';
+import {NavBarComponent} from './components/logged/subcomponents/navbar/navbar.component';
+import {UnloggedComponent} from './components/unlogged/unlogged.component';
+import {LoggedComponent} from './components/logged/logged.component';
+import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
+import {CheckSessionComponent} from './components/check_session.component';
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 import {EventsEmitter} from './services/event-emitter.service';
+import {SessionService} from './services/session.service';
 
 //import {} from './services/.service';
 
@@ -33,7 +39,12 @@ const APP_PROVIDERS = [
   bootstrap: [ AppComponent ],
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavBarComponent,
+    UnloggedComponent,
+    UnloggedHomeComponent,
+    CheckSessionComponent,
+    LoggedComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
@@ -46,7 +57,8 @@ const APP_PROVIDERS = [
     ENV_PROVIDERS,
     APP_PROVIDERS,
     EventsEmitter,
-    ToasterService
+    ToasterService,
+    SessionService
   ]
 })
 export class AppModule {

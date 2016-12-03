@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  template: `<h1>Spotter Saver</h1>`
+  selector: 'uhome-cmp',
+  templateUrl: './home.html'
 })
-export class HomeComponent implements OnInit {
+export class UnloggedHomeComponent implements OnInit {
 
   constructor() { }
 

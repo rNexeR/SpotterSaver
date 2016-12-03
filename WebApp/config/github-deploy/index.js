@@ -16,6 +16,7 @@ function getWebpackConfigModule(options) {
 }
 
 function getRepoName(remoteName) {
+  return "SpotterSaver";
   console.log(remoteName);
   remoteName = remoteName || 'origin';
 
