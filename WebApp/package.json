@@ -135,10 +135,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/rNexeR/SpotterSaver"
   },
   "bugs": {
-    "url": "https://github.com/"
+    "url": "https://github.com/rNexeR/SpotterSaver/issues"
   },
   "engines": {
     "node": ">= 4.2.1",
