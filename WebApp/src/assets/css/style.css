@@ -329,7 +329,7 @@ ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #133C6A
 .navbar-brand {
 	width: 300px;
 	height: 106px;
-	background: url(../img/logo_unitec_small.png) left center no-repeat;
+	/*background: url(../img/logo_unitec_small.png) left center no-repeat;*/
 	text-indent: -99999px;
 }
 
@@ -366,7 +366,7 @@ ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #133C6A
     width: 95%;
     padding: 10px 20px;
     background-color: #1d1d1d; /* browsers that don't support rgba */
-    background: url(..//img/logo_unitec.png) right no-repeat;
+    /*background: url(..//img/logo_unitec.png) right no-repeat;*/
     background-size: 150px;
     background-color: rgba(0, 0, 0, .7);
     font-size: 14px;
