@@ -16,6 +16,7 @@ function getWebpackConfigModule(options) {
 }
 
 function getRepoName(remoteName) {
+  console.log(remoteName);
   remoteName = remoteName || 'origin';
 
   var stdout = execSync('git remote show ' + remoteName),
