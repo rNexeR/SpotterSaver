@@ -1,11 +1,11 @@
 {
   "vendor": {
-    "js": "/https://github.com/rNexeR/SpotterSaver/vendor.2eaa7fdc332a05da3fc2.bundle.js"
+    "js": "/https://github.com/rNexeR/SpotterSaver/vendor.bundle.js"
   },
   "main": {
-    "js": "/https://github.com/rNexeR/SpotterSaver/main.b709b7ce8f8d9e8ebbc1.bundle.js"
+    "js": "/https://github.com/rNexeR/SpotterSaver/main.bundle.js"
   },
   "polyfills": {
-    "js": "/https://github.com/rNexeR/SpotterSaver/polyfills.a8b6c6d6f960bbaa8775.bundle.js"
+    "js": "/https://github.com/rNexeR/SpotterSaver/polyfills.bundle.js"
   }
 }
