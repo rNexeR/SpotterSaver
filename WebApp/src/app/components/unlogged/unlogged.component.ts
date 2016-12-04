@@ -5,6 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
   template: `	
   				<uhome-cmp></uhome-cmp>
+  				<login-cmp></login-cmp>
              `
 })
 

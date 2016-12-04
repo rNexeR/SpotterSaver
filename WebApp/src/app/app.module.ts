@@ -19,6 +19,7 @@ import {UnloggedComponent} from './components/unlogged/unlogged.component';
 import {LoggedComponent} from './components/logged/logged.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
+import {LoginComponent} from './components/unlogged/login/login.component'
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -44,7 +45,8 @@ const APP_PROVIDERS = [
     UnloggedComponent,
     UnloggedHomeComponent,
     CheckSessionComponent,
-    LoggedComponent
+    LoggedComponent,
+    LoginComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
