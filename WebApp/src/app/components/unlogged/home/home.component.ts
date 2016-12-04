@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UnloggedHomeComponent implements OnInit {
 
-	public username="";
+
   constructor() { }
 
   ngOnInit() {
+  	
   }
 
 }
