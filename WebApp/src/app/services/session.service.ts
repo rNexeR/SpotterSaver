@@ -8,7 +8,7 @@ import {Session} from '../structures/session';
 export class SessionService{
 	getSession(){
 		var session = sessionStorage.getItem('session');
-		return session;	
+		return JSON.parse(session);	
 	}
 
 	setSession(user : Session){

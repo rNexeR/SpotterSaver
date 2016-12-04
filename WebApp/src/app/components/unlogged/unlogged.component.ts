@@ -4,7 +4,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'unlogged-cmp',
   encapsulation: ViewEncapsulation.None,
   template: `	
-  				<uhome-cmp></uhome-cmp>
+  				<router-outlet></router-outlet>
              `
 })
 

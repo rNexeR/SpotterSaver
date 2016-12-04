@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'home-cmp',
-  templateUrl: './home.html'
+  selector: 'profile-cmp',
+  templateUrl: './profile.html'
 })
-export class HomeComponent implements OnInit {
+export class ProfileComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
-
-
 
 }
