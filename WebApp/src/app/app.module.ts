@@ -25,6 +25,7 @@ import {LoginComponent} from './components/unlogged/login/login.component'
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 import {EventsEmitter} from './services/event-emitter.service';
 import {SessionService} from './services/session.service';
+import {ClientsService} from './services/clients.service';
 
 //import {} from './services/.service';
 
@@ -60,7 +61,8 @@ const APP_PROVIDERS = [
     APP_PROVIDERS,
     EventsEmitter,
     ToasterService,
-    SessionService
+    SessionService,
+    ClientsService
   ]
 })
 export class AppModule {
