@@ -16,6 +16,7 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { HomeComponent } from './components/logged/home/home.component';
 import {NavBarComponent} from './components/logged/subcomponents/navbar/navbar.component';
 import {UnloggedComponent} from './components/unlogged/unlogged.component';
+import {RegisterComponent} from './components/unlogged/register/register.component';
 import {LoggedComponent} from './components/logged/logged.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
@@ -44,7 +45,8 @@ const APP_PROVIDERS = [
     UnloggedComponent,
     UnloggedHomeComponent,
     CheckSessionComponent,
-    LoggedComponent
+    LoggedComponent,
+    RegisterComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
