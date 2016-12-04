@@ -1,0 +1,51 @@
+<div class="body">
+    <div class="col-sm-6 col-sm-offset-3 form-box">
+    <img src="../../../../assets/img/logo_unitec.jpg" style="margin-bottom: 3%; border-radius: 10px ">
+        <div style="background-color: rgba(255,255,255,0.9);border-radius: 10px;padding: 5% ">
+        	<form role="form" (ngSubmit)="register()" class="registration-form">
+        		
+        		<fieldset>
+                	<div class="form-top">
+                		<div class="form-top-left">
+                    		<h3>Register</h3>
+                		</div>
+                		<div class="form-top-right">
+                			<i class="fa fa-user"></i>
+                		</div>
+                    </div>
+                    <div class="form-bottom">
+                    	<div class="form-group">
+                    		<label class="sr-only" for="form-first-name">First Name</label>
+                        	<input [(ngModel)]="firstName" [ngModelOptions]="{standalone: true}" type="text" name="form-first-name" placeholder="first name..." class="form-first-name form-control" id="form-first-name">
+                        </div>
+                    	<div class="form-group">
+                    		<label class="sr-only" for="form-last-name">Last Name</label>
+                        	<input [(ngModel)]="lastName" type="text" name="form-last-name" placeholder="last name..." class="form-last-name form-control" id="form-last-name">
+                        </div>
+                        <div class="form-group">
+                    		<label class="sr-only" for="form-birthday">Birthday</label>
+                        	<input [(ngModel)]="birthday" type="date" name="form-birthday" placeholder="birthday..." class="form-birthday form-control" id="form-birthday">
+                        </div>
+                        <div class="form-group">
+                    		<label class="sr-only" for="form-email">Email</label>
+                        	<input [(ngModel)]="email" type="text" name="form-email" placeholder="email..." class="form-email form-control" id="form-email">
+                        </div>
+                        <div class="form-group">
+                        	<label class="sr-only" for="form-password">password</label>
+                        	<input type="password" name="form-password" placeholder="password..." class="form-password form-control" id="form-password">
+                        </div>
+                        <div class="form-group">
+                    		<label class="sr-only" for="form-cellphone">Cellphone</label>
+                        	<input [(ngModel)]="cellphone" type="text" name="form-cellphone" placeholder="cellphone..." class="form-cellphone form-control" id="form-cellphone">
+                        </div>
+                        <div class="form-group">
+                    		<label class="sr-only" for="form-email">Email</label>
+                        	<input [(ngModel)]="creditCard" type="text" name="form-creditCard" placeholder="credit card..." class="form-creditCard form-control" id="form-creditCard">
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Sign In"><br><br>
+                    </div>
+                </fieldset>                
+            </form>
+        </div>
+    </div>
+</div>
