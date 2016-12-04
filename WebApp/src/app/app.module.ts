@@ -18,8 +18,10 @@ import {NavBarComponent} from './components/logged/subcomponents/navbar/navbar.c
 import {UnloggedComponent} from './components/unlogged/unlogged.component';
 import {RegisterComponent} from './components/unlogged/register/register.component';
 import {LoggedComponent} from './components/logged/logged.component';
+import {ProfileComponent} from './components/logged/profile/profile.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
+import {LoginComponent} from './components/unlogged/login/login.component'
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -46,7 +48,9 @@ const APP_PROVIDERS = [
     UnloggedHomeComponent,
     CheckSessionComponent,
     LoggedComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    ProfileComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

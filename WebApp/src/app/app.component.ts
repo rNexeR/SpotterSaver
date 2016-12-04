@@ -13,7 +13,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   template: `	
-  				<router-outlet>Hola</router-outlet>
+  				<router-outlet></router-outlet>
              `,
   styleUrls: [	'../assets/bootstrap/css/bootstrap.css',
 			  	'../assets/elegant-font/code/style.css',
