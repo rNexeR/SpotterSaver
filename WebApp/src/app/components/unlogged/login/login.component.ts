@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-  	alert(this.username);
-  	this._session.setSession(new Session("token","username"));
+  	this._session.setSession(new Session("token",this.username));
+  	this._router.navigate(['logged']);
   }
 }
