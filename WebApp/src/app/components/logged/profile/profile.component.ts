@@ -5,6 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './profile.html'
 })
 export class ProfileComponent implements OnInit {
+  	public firstName = "Clara";
+	public lastName = "Estefania";
+	public birthday = "";
+	public email = "";
+	public password = "";
+	public cellphone = "";
+	public creditCard = "";
 
   constructor() { }
 
