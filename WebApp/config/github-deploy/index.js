@@ -15,10 +15,9 @@ function getWebpackConfigModule(options) {
   }
 }
 
-function getRepoName(remoteName) {
+function getRepoName(remoteName='origin') {
   return "SpotterSaver";
   console.log(remoteName);
-  remoteName = remoteName || 'origin';
 
   var stdout = execSync('git remote show ' + remoteName),
       match = REPO_NAME_RE.exec(stdout);
