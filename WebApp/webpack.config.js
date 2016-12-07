@@ -3,6 +3,8 @@
  */
 
 // Look in ./config folder for webpack.dev.js
+output.publicPath: '/SpotterSaver';
+
 switch (process.env.NODE_ENV) {
   case 'prod':
   case 'production':
