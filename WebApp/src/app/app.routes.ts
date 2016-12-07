@@ -5,7 +5,8 @@ import {LoggedComponent} from './components/logged/logged.component';
 import {ProfileComponent} from './components/logged/profile/profile.component';
 import {CheckSessionComponent} from './components/check_session.component';
 import {RegisterComponent} from './components/unlogged/register/register.component';
-import {LoginComponent} from './components/unlogged/login/login.component'
+import {LoginComponent} from './components/unlogged/login/login.component';
+import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
 
 import { DataResolver } from './app.resolver';
 
@@ -18,7 +19,9 @@ export const ROUTES: Routes = [
   ] },
   { path: 'logged', component: LoggedComponent, children: [
     {path: '', component: HomeComponent},
-    {path: 'profile', component: ProfileComponent}
+    {path: 'home', component: HomeComponent},
+    {path: 'profile', component: ProfileComponent},
+    {path: 'register-event', component: RegisterEventComponent}
     ] },
   {path: 'verifyingSession', component: CheckSessionComponent},
   { path: '**', redirectTo: 'unlogged'}
