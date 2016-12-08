@@ -7,6 +7,7 @@
 	</div>
 
 </div>-->
+<search-bar [search_text]="searched"></search-bar>
 
 <div class="work-container">
     <div class="container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
@@ -16,7 +17,7 @@
             </div>
         </div>
         <div class="row" style="padding-bottom: 10px">
-        	
+        
         	<div *ngFor="let event of events | filtere: searched" class="col-sm-3">
                 <a href="#">
 	                <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">

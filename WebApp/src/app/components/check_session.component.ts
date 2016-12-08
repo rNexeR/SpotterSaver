@@ -21,7 +21,7 @@ export class CheckSessionComponent implements OnInit {
 		if(this._session.hasSession()){
 			this._router.navigate(['logged']);
 		}else{
-			this._router.navigate(['unlogged']);
+			this._router.navigate(['login']);
 		}
 	}
 

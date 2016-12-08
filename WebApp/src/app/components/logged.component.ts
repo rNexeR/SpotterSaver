@@ -1,12 +1,12 @@
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import {SessionService} from '../../services/session.service';
+import {SessionService} from '../services/session.service';
 import { ActivatedRoute, Router }   from '@angular/router';
 
 @Component({
   selector: 'logged-cmp',
   encapsulation: ViewEncapsulation.None,
-  template: `	<nav-bar></nav-bar>
+  template: `	
   				<router-outlet></router-outlet>
              `
 })
@@ -18,7 +18,7 @@ export class LoggedComponent {
 
 	ngOnInit(){
 		if(!this._session.hasSession()){
-			this._router.navigate(['unlogged']);
+			this._router.navigate(['login']);
 		}
 	}
 

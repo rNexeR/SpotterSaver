@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {ClientsService} from '../../../../services/clients.service';
+import {ClientsService} from '../../../services/clients.service';
 
 @Component({
   selector: 'chat-sidebar-cmp',
@@ -15,13 +15,13 @@ export class ChatSidebarComponent implements OnInit {
   }
 
   ngOnInit() {
-  	
+    
   }
 
   selectUser(name){
-  	console.log(name);
-  	this.current_name = name;
-  	this.selectedUser.emit({value: this.current_name});
+    console.log(name);
+    this.current_name = name;
+    this.selectedUser.emit({value: this.current_name});
   }
 
 }

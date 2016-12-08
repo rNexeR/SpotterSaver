@@ -1,0 +1,29 @@
+<div class="nav-fixed">
+<nav class="navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+            <a class="navbar-brand" [routerLink]="['/home']">Spotter Saver</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div *ngIf="hasSession">
+            <logged-nav-bar></logged-nav-bar>
+        </div>
+        <div *ngIf="!hasSession">
+            <unlogged-nav-bar></unlogged-nav-bar>
+        </div>
+    </div>
+</nav>
+    <!--
+    <div style="background-color: #174880">
+        <div class="container">
+            <p style="float: right">Usuario</p>
+        </div> 
+    </div>
+    -->
+</div>
