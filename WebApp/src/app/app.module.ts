@@ -19,6 +19,7 @@ import {UnloggedComponent} from './components/unlogged/unlogged.component';
 import {RegisterComponent} from './components/unlogged/register/register.component';
 import {LoggedComponent} from './components/logged/logged.component';
 import {ProfileComponent} from './components/logged/profile/profile.component';
+import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
 import {LoginComponent} from './components/unlogged/login/login.component'
@@ -31,6 +32,9 @@ import {SessionService} from './services/session.service';
 import {ClientsService} from './services/clients.service';
 
 //import {} from './services/.service';
+
+import { AgmCoreModule } from 'angular2-google-maps/core';
+
 
 // Application wide providers
 const APP_PROVIDERS = [
@@ -53,13 +57,17 @@ const APP_PROVIDERS = [
     RegisterComponent,
     LoginComponent,
     ProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    RegisterEventComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
     FormsModule,
     HttpModule,
     ToasterModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAlqeDp-qIydV1m1mO36iZ4j4Jo7V66u9E'
+    }),
     RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
