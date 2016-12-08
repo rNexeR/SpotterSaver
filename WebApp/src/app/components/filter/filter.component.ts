@@ -1,7 +1,7 @@
 
 import { Component, ViewEncapsulation, OnInit, Pipe } from '@angular/core';
 import { ActivatedRoute, Router }   from '@angular/router';
-import {EventsService} from '../../../services/events.service';
+import {EventsService} from '../../services/events.service';
 
 @Component({
   selector: 'filter-cmp',
