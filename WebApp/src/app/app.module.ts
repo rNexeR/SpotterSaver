@@ -22,6 +22,7 @@ import {ProfileComponent} from './components/logged/profile/profile.component';
 import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
+import {SearchBarComponent} from './components/logged/subcomponents/searchbar/searchbar.component';
 import {LoginComponent} from './components/unlogged/login/login.component';
 import {FilterComponent} from './components/common/filter/filter.component';
 import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
@@ -62,6 +63,7 @@ const APP_PROVIDERS = [
     LoginComponent,
     ProfileComponent,
     RegisterEventComponent,
+    SearchBarComponent,
     FilterComponent,
     FilterArrayPipe,
     FilterArrayPipeExactly,
