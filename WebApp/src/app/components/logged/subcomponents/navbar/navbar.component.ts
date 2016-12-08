@@ -12,8 +12,11 @@ export class NavBarComponent implements OnInit {
   constructor(private _session:SessionService) { }
 
   ngOnInit() {
-  	var session : Session = this._session.getSession();
-  	this.username = session.username;
+  	if(this._session.hasSession()){
+		var session : Session = this._session.getSession();
+	  	this.username = session.username;
+	}
+  	
   }
 
 }
