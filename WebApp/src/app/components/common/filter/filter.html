@@ -1,0 +1,9 @@
+<div style="background-color: white">
+
+	<input type="text" name="" value="" [(ngModel)]="searched" placeholder="">
+	<div *ngFor="let event of events | filtere: searched">
+		{{event.Name}}
+		{{event.Category}}
+	</div>
+
+</div>
