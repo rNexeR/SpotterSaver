@@ -7,7 +7,6 @@ import { ActivatedRoute, Router }   from '@angular/router';
   selector: 'logged-cmp',
   encapsulation: ViewEncapsulation.None,
   template: `	<nav-bar></nav-bar>
-  				<search-bar></search-bar>
   				<router-outlet></router-outlet>
              `
 })
