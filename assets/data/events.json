@@ -2,7 +2,7 @@
 	{
 		"Name": "Halloween Party",
 		"Address": "5281 Amet St.",
-		"Cost": "$68.63",
+		"Cost": 68.63,
 		"Type": "Table",
 		"Capacity": 8,
 		"Limit": 35,
@@ -16,7 +16,7 @@
 	{
 		"Name": "Christmas Dinner",
 		"Address": "379-336 Mauris. Street",
-		"Cost": "$58.50",
+		"Cost": 58.50,
 		"Type": "Table",
 		"Capacity": 6,
 		"Limit": 49,
@@ -30,7 +30,7 @@
 	{
 		"Name": "San Valentin's Days",
 		"Address": "551-7411 A, Av.",
-		"Cost": "$60.64",
+		"Cost": 60.64,
 		"Type": "Seats",
 		"Capacity": 2,
 		"Limit": 59,
@@ -44,7 +44,7 @@
 	{
 		"Name": "Karaoke Night",
 		"Address": "901-5305 Integer Ave",
-		"Cost": "$72.01",
+		"Cost": 72.01,
 		"Type": "Seats",
 		"Capacity": 2,
 		"Limit": 78,
@@ -58,7 +58,7 @@
 	{
 		"Name": "Live Music Night",
 		"Address": "Ap #757-3827 Dignissim Rd.",
-		"Cost": "$58.29",
+		"Cost": 58.29,
 		"Type": "Table",
 		"Capacity": 2,
 		"Limit": 78,
@@ -72,7 +72,7 @@
 	{
 		"Name": "Keny's Fifteen Birthday",
 		"Address": "8656 Consectetuer Av.",
-		"Cost": "$72.60",
+		"Cost": 72.60,
 		"Type": "Table",
 		"Capacity": 9,
 		"Limit": 21,
@@ -86,7 +86,7 @@
 	{
 		"Name": "Saybe: Mamma Mia",
 		"Address": "137-1061 Nunc Rd.",
-		"Cost": "$99.66",
+		"Cost": 99.66,
 		"Type": "Seats",
 		"Capacity": 7,
 		"Limit": 21,
@@ -100,7 +100,7 @@
 	{
 		"Name": "San Valentin's Day Dinner",
 		"Address": "P.O. Box 447, 6207 Augue St.",
-		"Cost": "$30.41",
+		"Cost": 30.41,
 		"Type": "Seats",
 		"Capacity": 3,
 		"Limit": 99,
@@ -114,7 +114,7 @@
 	{
 		"Name": "Unitec Prom",
 		"Address": "P.O. Box 381, 4910 Dui St.",
-		"Cost": "$60.98",
+		"Cost": 60.98,
 		"Type": "Table",
 		"Capacity": 6,
 		"Limit": 39,
@@ -128,7 +128,7 @@
 	{
 		"Name": "Thanks Giving Day",
 		"Address": "Ap #976-4965 Libero Rd.",
-		"Cost": "$52.65",
+		"Cost": 52.65,
 		"Type": "Table",
 		"Capacity": 1,
 		"Limit": 88,
@@ -142,7 +142,7 @@
 	{
 		"Name": "Cultural Sanpedrano: Cats",
 		"Address": "369-8511 Blandit Rd.",
-		"Cost": "$24.80",
+		"Cost": 24.80,
 		"Type": "Seats",
 		"Capacity": 10,
 		"Limit": 30,
@@ -156,7 +156,7 @@
 	{
 		"Name": "Saybe: The Hunchback of Notre Dame",
 		"Address": "1016 Feugiat Rd.",
-		"Cost": "$68.37",
+		"Cost": 68.37,
 		"Type": "Seats",
 		"Capacity": 5,
 		"Limit": 48,
