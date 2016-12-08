@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'profile-cmp',
-  templateUrl: './profile.html'
+  selector: 'edit-profile-cmp',
+  templateUrl: './edit.html'
 })
-export class ProfileComponent implements OnInit {
+export class EditProfileComponent implements OnInit {
   	public firstName = "Clara";
 	public lastName = "Estefania";
 	public gender = "Female";
