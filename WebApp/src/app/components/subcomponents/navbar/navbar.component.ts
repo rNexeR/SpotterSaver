@@ -9,10 +9,13 @@ export class NavBarComponent implements OnInit {
 
 
 	public username : string ="";
+  public hasSession : Boolean = false;
+  
   constructor(private _session:SessionService) { }
 
   ngOnInit() {
-  	if(this._session.hasSession()){
+    this.hasSession = this._session.hasSession();
+  	if(this.hasSession){
 		var session : Session = this._session.getSession();
 	  	this.username = session.username;
 	}

@@ -12,7 +12,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
-  template: `	
+  template: `	<nav-bar></nav-bar>
   				<router-outlet></router-outlet>
              `,
   styleUrls: [	'../assets/bootstrap/css/bootstrap.css',

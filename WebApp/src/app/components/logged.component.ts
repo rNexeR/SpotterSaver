@@ -6,7 +6,7 @@ import { ActivatedRoute, Router }   from '@angular/router';
 @Component({
   selector: 'logged-cmp',
   encapsulation: ViewEncapsulation.None,
-  template: `	<nav-bar></nav-bar>
+  template: `	
   				<router-outlet></router-outlet>
              `
 })
