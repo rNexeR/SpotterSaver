@@ -13,22 +13,22 @@ import { ROUTES } from './app.routes';
 // App is our top level component
 import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
-import { HomeComponent } from './components/logged/home/home.component';
-import {NavBarComponent} from './components/logged/subcomponents/navbar/navbar.component';
-import {UnloggedComponent} from './components/unlogged/unlogged.component';
-import {RegisterComponent} from './components/unlogged/register/register.component';
-import {LoggedComponent} from './components/logged/logged.component';
-import {ChatroomComponent} from './components/logged/chatroom/chatroom.component';
-import {ProfileComponent} from './components/logged/profile/profile.component';
-import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
-import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
+import { HomeComponent } from './components/home/home.component';
+import {NavBarComponent} from './components/subcomponents/navbar/navbar.component';
+import {UnloggedComponent} from './components/unlogged.component';
+import {RegisterComponent} from './components/register/register.component';
+import {LoggedComponent} from './components/logged.component';
+import {ChatroomComponent} from './components/chatroom/chatroom.component';
+import {ProfileComponent} from './components/profile/profile.component';
+import {RegisterEventComponent} from './components/register-event/register_event.component';
+import {UnloggedHomeComponent} from './components/unloggedhome/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
-import {SearchBarComponent} from './components/logged/subcomponents/searchbar/searchbar.component';
-import {LoginComponent} from './components/unlogged/login/login.component';
-import {FilterComponent} from './components/common/filter/filter.component';
-import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
-import {ChatSidebarComponent} from './components/logged/subcomponents/chat-sidebar/chat_sidebar.component';
-import {ChatAreaComponent} from './components/logged/subcomponents/chat-area/chat_area.component';
+import {SearchBarComponent} from './components/subcomponents/searchbar/searchbar.component';
+import {LoginComponent} from './components/login/login.component';
+import {FilterComponent} from './components/filter/filter.component';
+import {EditProfileComponent} from './components/subcomponents/edit/edit.component';
+import {ChatSidebarComponent} from './components/subcomponents/chat-sidebar/chat_sidebar.component';
+import {ChatAreaComponent} from './components/subcomponents/chat-area/chat_area.component';
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -36,6 +36,7 @@ import {EventsEmitter} from './services/event-emitter.service';
 import {SessionService} from './services/session.service';
 import {ClientsService} from './services/clients.service';
 import {EventsService} from './services/events.service';
+import {MessagesService} from './services/messages.service';
 
 //import {} from './services/.service';
 
@@ -93,7 +94,8 @@ const APP_PROVIDERS = [
     ToasterService,
     SessionService,
     ClientsService,
-    EventsService
+    EventsService,
+    MessagesService
   ]
 })
 export class AppModule {

@@ -1,6 +1,6 @@
 
 import { Component, ViewEncapsulation } from '@angular/core';
-import {SessionService} from '../../services/session.service';
+import {SessionService} from '../services/session.service';
 import { ActivatedRoute, Router }   from '@angular/router';
 
 @Component({
@@ -18,7 +18,7 @@ export class LoggedComponent {
 
 	ngOnInit(){
 		if(!this._session.hasSession()){
-			this._router.navigate(['unlogged']);
+			this._router.navigate(['login']);
 		}
 	}
 
