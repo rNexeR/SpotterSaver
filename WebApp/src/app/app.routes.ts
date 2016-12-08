@@ -8,6 +8,7 @@ import {RegisterComponent} from './components/unlogged/register/register.compone
 import {LoginComponent} from './components/unlogged/login/login.component'
 import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
 import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
+import {ChatroomComponent} from './components/logged/chatroom/chatroom.component';
 
 import { DataResolver } from './app.resolver';
 
@@ -25,6 +26,7 @@ export const ROUTES: Routes = [
     {path: 'profile/edit', component: EditProfileComponent},
     {path: 'register-event', component: RegisterEventComponent}
     ] },
+  { path: 'try', component: ChatroomComponent},
   {path: 'verifyingSession', component: CheckSessionComponent},
   { path: '**', redirectTo: 'unlogged'}
 ];
