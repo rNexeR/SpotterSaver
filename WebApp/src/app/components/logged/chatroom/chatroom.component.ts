@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ClientsService} from '../../../services/clients.service';
+import {MessagesService} from '../../../services/messages.service';
 
 @Component({
   selector: 'chatroom-cmp',
@@ -7,9 +8,10 @@ import {ClientsService} from '../../../services/clients.service';
 })
 export class ChatroomComponent implements OnInit {
   public clients : any;
+  public messages = [];
   public current_user : string;
 
-  constructor(private _clients : ClientsService) { 
+  constructor(private _clients : ClientsService, private _messages : MessagesService) { 
 
   }
 
@@ -24,6 +26,10 @@ export class ChatroomComponent implements OnInit {
   	console.log("chatroom");
   	console.log(event.value);
   	this.current_user = event.value;
+
+  	this._messages.getMessages().then(
+      data => { this.messages = data[this.current_user]; console.log(this.messages);}
+      );
   }
 
 }
