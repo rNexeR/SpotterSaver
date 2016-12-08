@@ -1,18 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Router }   from '@angular/router';
+
 @Component({
   selector: 'search-bar',
   templateUrl: './search.html'
 })
 export class SearchBarComponent implements OnInit {
-
-
-	public search_text : string ="";
-  constructor() { }
+	@Input() search_text = "";
+	
+  constructor(private _router : Router) { }
 
   ngOnInit() {
   }
 
   search(){
-  	alert("searching "+this.search_text);
+  	this._router.navigate(['/logged/search', this.search_text]);
   }
 }
