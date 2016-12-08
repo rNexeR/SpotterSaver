@@ -6,6 +6,30 @@ th{
     text-align: center;
     font-style: bold;
 }
+
+.blue-bg{
+    background-color: #133C6A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*luis aqui*/
+#imaginary_container{
+    background-color: white !important;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+    border-right:0; 
+    box-shadow:0 0 0; 
+    border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+/*luis termino*/
+
 .sebm-google-map-container {
   height: 300px;
 }
@@ -143,7 +167,16 @@ th{
   border-radius: 15px;
 }
 
+.nav-fixed {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .body {
+    margin-top: 5%;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: #888;
