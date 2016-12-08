@@ -22,16 +22,21 @@ import {ProfileComponent} from './components/logged/profile/profile.component';
 import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
-import {LoginComponent} from './components/unlogged/login/login.component'
 import {SearchBarComponent} from './components/logged/subcomponents/searchbar/searchbar.component';
+import {LoginComponent} from './components/unlogged/login/login.component';
+import {FilterComponent} from './components/common/filter/filter.component';
+import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
 import {EventsEmitter} from './services/event-emitter.service';
 import {SessionService} from './services/session.service';
 import {ClientsService} from './services/clients.service';
+import {EventsService} from './services/events.service';
 
 //import {} from './services/.service';
+
+import {FilterArrayPipe, FilterArrayPipeExactly} from './pipes/filter/filter.component';
 
 import { AgmCoreModule } from 'angular2-google-maps/core';
 
@@ -58,7 +63,12 @@ const APP_PROVIDERS = [
     LoginComponent,
     ProfileComponent,
     RegisterEventComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    FilterComponent,
+    FilterArrayPipe,
+    FilterArrayPipeExactly,
+    EditProfileComponent,
+    RegisterEventComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
@@ -76,7 +86,8 @@ const APP_PROVIDERS = [
     EventsEmitter,
     ToasterService,
     SessionService,
-    ClientsService
+    ClientsService,
+    EventsService
   ]
 })
 export class AppModule {
