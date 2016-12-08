@@ -36,6 +36,7 @@ import {EventsEmitter} from './services/event-emitter.service';
 import {SessionService} from './services/session.service';
 import {ClientsService} from './services/clients.service';
 import {EventsService} from './services/events.service';
+import {MessagesService} from './services/messages.service';
 
 //import {} from './services/.service';
 
@@ -93,7 +94,8 @@ const APP_PROVIDERS = [
     ToasterService,
     SessionService,
     ClientsService,
-    EventsService
+    EventsService,
+    MessagesService
   ]
 })
 export class AppModule {

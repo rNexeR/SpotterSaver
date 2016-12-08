@@ -18,7 +18,7 @@ export class LoggedComponent {
 
 	ngOnInit(){
 		if(!this._session.hasSession()){
-			this._router.navigate(['unlogged']);
+			this._router.navigate(['login']);
 		}
 	}
 
