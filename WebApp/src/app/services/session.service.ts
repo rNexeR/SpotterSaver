@@ -20,6 +20,6 @@ export class SessionService{
 	}
 
 	hasSession(){
-		return this.getSession() != null;
+		return sessionStorage.length == 1;
 	}
 }

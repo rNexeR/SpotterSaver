@@ -15,13 +15,13 @@ export class ChatSidebarComponent implements OnInit {
   }
 
   ngOnInit() {
-  	
+    
   }
 
   selectUser(name){
-  	console.log(name);
-  	this.current_name = name;
-  	this.selectedUser.emit({value: this.current_name});
+    console.log(name);
+    this.current_name = name;
+    this.selectedUser.emit({value: this.current_name});
   }
 
 }

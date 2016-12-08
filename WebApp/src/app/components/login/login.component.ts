@@ -18,6 +18,6 @@ export class LoginComponent implements OnInit {
 
   login(){
   	this._session.setSession(new Session("token",this.username));
-  	this._router.navigate(['logged']);
+  	this._router.navigate(['/logged']);
   }
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import {MessagesService} from '../../../../services/messages.service';
 
 @Component({
   selector: 'chat-area-cmp',
@@ -13,7 +12,7 @@ export class ChatAreaComponent implements OnInit {
   }
 
   ngOnInit() {
-    
+  	
   }
 
 }

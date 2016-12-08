@@ -1,0 +1,32 @@
+<div class="collapse navbar-collapse" id="top-navbar-1">
+  <ul class="nav navbar-nav navbar-right">
+      <li>
+          <a [routerLink]="['/logged/home']" routerLinkActive="router-link-active"><span aria-hidden="true" class="icon_house"></span><br>Home</a>
+      </li>
+      <li>
+          <a [routerLink]="['/reservaciones']" routerLinkActive="router-link-active"><span aria-hidden="true" class="icon_documents"></span><br>Reservations</a>
+      </li>
+      <li>
+          <a [routerLink]="['/logged/register-event']" routerLinkActive="router-link-active"><span aria-hidden="true" class="social_myspace"></span><br>Events</a>
+      </li>
+      <li>
+          <a [routerLink]="['/nosotros']" routerLinkActive="router-link-active"><span aria-hidden="true" class="icon_profile"></span><br>About us</a>
+      </li>
+      <li>
+          <a [routerLink]="['/contacto']" routerLinkActive="router-link-active"><span aria-hidden="true" class="icon_mail"></span><br>Contact us</a>
+      </li>
+      <li role="presentation" class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            <span aria-hidden="true" class="glyphicon glyphicon-user"></span><br>{{username}}<span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+                <a [routerLink]="['/logged/profile']" routerLinkActive="router-link-active"><span aria-hidden="true" class="glyphicon glyphicon-log-in left-icon"></span>My profile</a>
+            </li>
+            <li>
+                <a [routerLink]="['/login']" routerLinkActive="router-link-active"><span aria-hidden="true" class="glyphicon glyphicon-plus left-icon"></span>Log out</a>
+            </li>
+          </ul>
+      </li> 
+  </ul>
+</div>
