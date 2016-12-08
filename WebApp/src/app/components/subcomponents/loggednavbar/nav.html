@@ -24,7 +24,7 @@
                 <a [routerLink]="['/logged/profile']" routerLinkActive="router-link-active"><span aria-hidden="true" class="glyphicon glyphicon-log-in left-icon"></span>My profile</a>
             </li>
             <li>
-                <a [routerLink]="['/login']" routerLinkActive="router-link-active"><span aria-hidden="true" class="glyphicon glyphicon-plus left-icon"></span>Log out</a>
+                <a (click)="logout()" routerLinkActive="router-link-active"><span aria-hidden="true" class="glyphicon glyphicon-plus left-icon"></span>Log out</a>
             </li>
           </ul>
       </li> 

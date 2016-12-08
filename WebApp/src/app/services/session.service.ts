@@ -20,6 +20,7 @@ export class SessionService{
 	}
 
 	hasSession(){
+		Object.keys(sessionStorage).map(console.log);
 		return sessionStorage.length == 1;
 	}
 }
