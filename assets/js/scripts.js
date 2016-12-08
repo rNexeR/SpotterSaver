@@ -1,210 +1,71 @@
 
 jQuery(document).ready(function() {
 	
-	/*
-	    Wow
-	*/
-	new WOW().init();
-	
-	/*
-	    Slider
-	*/
-	$('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        prevText: "",
-        nextText: ""
+    /*
+        Fullscreen background
+    */
+    $.backstretch("assets/img/backgrounds/1.jpg");
+    
+    $('#top-navbar-1').on('shown.bs.collapse', function(){
+    	$.backstretch("resize");
     });
-	
-	/*
-	    Image popup (home latest work)
-	*/
-	$('.view-work').magnificPopup({
-		type: 'image',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: 'The image could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.parent('.work-bottom').siblings('img').attr('alt');
-			}
-		},
-		callbacks: {
-			elementParse: function(item) {
-				item.src = item.el.attr('href');
-			}
-		}
-	});
-	
-	/*
-	    Flickr feed
-	*/
-	$('.flickr-feed').jflickrfeed({
-        limit: 8,
-        qstrings: {
-            id: '52617155@N08'
-        },
-        itemTemplate: '<a href="{{link}}" target="_blank" rel="nofollow"><img src="{{image_s}}" alt="{{title}}" /></a>'
-    });
-	
-	/*
-	    Google maps
-	*/
-	var position = new google.maps.LatLng(45.067883, 7.687231);
-    $('.map').gmap({'center': position,'zoom': 15, 'disableDefaultUI':true, 'callback': function() {
-            var self = this;
-            self.addMarker({'position': this.get('map').getCenter() });	
-        }
+    $('#top-navbar-1').on('hidden.bs.collapse', function(){
+    	$.backstretch("resize");
     });
     
     /*
-	    Subscription form
-	*/
-	$('.success-message').hide();
-	$('.error-message').hide();
-	
-	$('.footer-box-text-subscribe form').submit(function(e) {
-		e.preventDefault();
-		
-		var form = $(this);
-	    var postdata = form.serialize();
-	    
-	    $.ajax({
-	        type: 'POST',
-	        url: 'assets/subscribe.php',
-	        data: postdata,
-	        dataType: 'json',
-	        success: function(json) {
-	            if(json.valid == 0) {
-	                $('.success-message').hide();
-	                $('.error-message').hide();
-	                $('.error-message').html(json.message);
-	                $('.error-message').fadeIn();
-	            }
-	            else {
-	                $('.error-message').hide();
-	                $('.success-message').hide();
-	                form.hide();
-	                $('.success-message').html(json.message);
-	                $('.success-message').fadeIn();
-	            }
-	        }
-	    });
-	});
+        Form
+    */
+    $('.registration-form fieldset:first-child').fadeIn('slow');
     
-    /*
-	    Contact form
-	*/
-    $('.contact-form form').submit(function(e) {
-    	e.preventDefault();
-
-    	var form = $(this);
-    	var nameLabel = form.find('label[for="contact-name"]');
-    	var emailLabel = form.find('label[for="contact-email"]');
-    	var messageLabel = form.find('label[for="contact-message"]');
+    $('.registration-form input[type="text"], .registration-form input[type="password"], .registration-form textarea').on('focus', function() {
+    	$(this).removeClass('input-error');
+    });
+    
+    // next step
+    $('.registration-form .btn-next').on('click', function() {
+    	var parent_fieldset = $(this).parents('fieldset');
+    	var next_step = true;
     	
-    	nameLabel.html('Name');
-    	emailLabel.html('Email');
-    	messageLabel.html('Message');
-        
-        var postdata = form.serialize();
-        
-        $.ajax({
-            type: 'POST',
-            url: 'assets/contact.php',
-            data: postdata,
-            dataType: 'json',
-            success: function(json) {
-                if(json.nameMessage != '') {
-                	nameLabel.append(' - <span class="colored-text error-label"> ' + json.nameMessage + '</span>');
-                }
-                if(json.emailMessage != '') {
-                	emailLabel.append(' - <span class="colored-text error-label"> ' + json.emailMessage + '</span>');
-                }
-                if(json.messageMessage != '') {
-                	messageLabel.append(' - <span class="colored-text error-label"> ' + json.messageMessage + '</span>');
-                }
-                if(json.nameMessage == '' && json.emailMessage == '' && json.messageMessage == '') {
-                	form.fadeOut('fast', function() {
-                		form.parent('.contact-form').append('<p><span class="colored-text">Thanks for contacting us!</span> We will get back to you very soon.</p>');
-                    });
-                }
-            }
-        });
+    	parent_fieldset.find('input[type="text"], input[type="password"], textarea').each(function() {
+    		if( $(this).val() == "" ) {
+    			$(this).addClass('input-error');
+    			next_step = false;
+    		}
+    		else {
+    			$(this).removeClass('input-error');
+    		}
+    	});
+    	
+    	if( next_step ) {
+    		parent_fieldset.fadeOut(400, function() {
+	    		$(this).next().fadeIn();
+	    	});
+    	}
+    	
     });
-	
-});
-
-
-jQuery(window).load(function() {
-	
-	/*
-	    Portfolio
-	*/
-	$('.portfolio-masonry').masonry({
-		columnWidth: '.portfolio-box', 
-		itemSelector: '.portfolio-box',
-		transitionDuration: '0.5s'
-	});
-	
-	$('.portfolio-filters a').on('click', function(e){
-		e.preventDefault();
-		if(!$(this).hasClass('active')) {
-	    	$('.portfolio-filters a').removeClass('active');
-	    	var clicked_filter = $(this).attr('class').replace('filter-', '');
-	    	$(this).addClass('active');
-	    	if(clicked_filter != 'all') {
-	    		$('.portfolio-box:not(.' + clicked_filter + ')').css('display', 'none');
-	    		$('.portfolio-box:not(.' + clicked_filter + ')').removeClass('portfolio-box');
-	    		$('.' + clicked_filter).addClass('portfolio-box');
-	    		$('.' + clicked_filter).css('display', 'block');
-	    		$('.portfolio-masonry').masonry();
-	    	}
-	    	else {
-	    		$('.portfolio-masonry > div').addClass('portfolio-box');
-	    		$('.portfolio-masonry > div').css('display', 'block');
-	    		$('.portfolio-masonry').masonry();
-	    	}
-		}
-	});
-	
-	$(window).on('resize', function(){ $('.portfolio-masonry').masonry(); });
-	
-	// image popup	
-	$('.portfolio-box h3').magnificPopup({
-		type: 'image',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: 'The image could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.text();
-			}
-		},
-		callbacks: {
-			elementParse: function(item) {
-				var box_container = item.el.parents('.portfolio-box-container');
-				if(box_container.hasClass('portfolio-video')) {
-					item.type = 'iframe';
-					item.src = box_container.data('portfolio-big');
-				}
-				else {
-					item.type = 'image';
-					item.src = box_container.find('img').attr('src');
-				}
-			}
-		}
-	});
-	
-	/*
-		Testimonial images
-	*/
-	$(".testimonial-image img").attr("style", "width: auto !important; height: auto !important;");
-	
+    
+    // previous step
+    $('.registration-form .btn-previous').on('click', function() {
+    	$(this).parents('fieldset').fadeOut(400, function() {
+    		$(this).prev().fadeIn();
+    	});
+    });
+    
+    // submit
+    $('.registration-form').on('submit', function(e) {
+    	
+    	$(this).find('input[type="text"], input[type="password"], textarea').each(function() {
+    		if( $(this).val() == "" ) {
+    			e.preventDefault();
+    			$(this).addClass('input-error');
+    		}
+    		else {
+    			$(this).removeClass('input-error');
+    		}
+    	});
+    	
+    });
+    
+    
 });
