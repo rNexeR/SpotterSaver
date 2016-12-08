@@ -18,6 +18,7 @@ import {NavBarComponent} from './components/logged/subcomponents/navbar/navbar.c
 import {UnloggedComponent} from './components/unlogged/unlogged.component';
 import {RegisterComponent} from './components/unlogged/register/register.component';
 import {LoggedComponent} from './components/logged/logged.component';
+import {ChatroomComponent} from './components/logged/chatroom/chatroom.component';
 import {ProfileComponent} from './components/logged/profile/profile.component';
 import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
 import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
@@ -26,6 +27,8 @@ import {SearchBarComponent} from './components/logged/subcomponents/searchbar/se
 import {LoginComponent} from './components/unlogged/login/login.component';
 import {FilterComponent} from './components/common/filter/filter.component';
 import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
+import {ChatSidebarComponent} from './components/logged/subcomponents/chat-sidebar/chat_sidebar.component';
+import {ChatAreaComponent} from './components/logged/subcomponents/chat-area/chat_area.component';
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -68,7 +71,10 @@ const APP_PROVIDERS = [
     FilterArrayPipe,
     FilterArrayPipeExactly,
     EditProfileComponent,
-    RegisterEventComponent
+    RegisterEventComponent,
+    ChatroomComponent,
+    ChatSidebarComponent,
+    ChatAreaComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
