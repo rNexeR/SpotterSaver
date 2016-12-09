@@ -10,6 +10,7 @@ import {EditProfileComponent} from './components/subcomponents/edit/edit.compone
 import {RegisterEventComponent} from './components/register-event/register_event.component';
 import {ChatroomComponent} from './components/chatroom/chatroom.component';
 import {FilterComponent} from './components/filter/filter.component';
+import {PaymentComponent} from './components/payment/payment.component';
 
 import { DataResolver } from './app.resolver';
 
@@ -25,7 +26,8 @@ export const ROUTES: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'profile', component: ProfileComponent},
     {path: 'profile/edit', component: EditProfileComponent},
-    {path: 'register-event', component: RegisterEventComponent}
+    {path: 'register-event', component: RegisterEventComponent},
+    {path: 'payment', component: PaymentComponent}
     ] },
   { path: 'try', component: ChatroomComponent},
   {path: 'verifyingSession', component: CheckSessionComponent},

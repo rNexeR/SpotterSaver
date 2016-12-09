@@ -32,6 +32,7 @@ import {ChatAreaComponent} from './components/subcomponents/chat-area/chat_area.
 import {UnloggedNavBarComponent} from './components/subcomponents/unloggednavbar/unloggednavbar.component';
 import {LoggedNavBarComponent} from './components/subcomponents/loggednavbar/loggednavbar.component';
 import {EventStandComponent} from './components/subcomponents/eventstand/eventstand.component';
+import {PaymentComponent} from './components/payment/payment.component';
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -81,7 +82,8 @@ const APP_PROVIDERS = [
     ChatAreaComponent,
     UnloggedNavBarComponent,
     LoggedNavBarComponent,
-    EventStandComponent
+    EventStandComponent,
+    PaymentComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

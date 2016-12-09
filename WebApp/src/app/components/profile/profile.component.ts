@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {EventsService} from '../../services/events.service';
 @Component({
   selector: 'profile-cmp',
   templateUrl: './profile.html'
@@ -14,9 +14,14 @@ export class ProfileComponent implements OnInit {
 	public cellphone = "(504) 9868-7315";
 	public creditCard = "5214-3698-5001-4872";
 
-  constructor() { }
+  public events = [];
+  constructor(private _events : EventsService) { }
 
   ngOnInit() {
+        this._events.getEvents()
+      .then(
+        data => {this.events = data;}
+        );
   }
 
   getName(){

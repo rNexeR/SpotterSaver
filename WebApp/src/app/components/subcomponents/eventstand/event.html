@@ -1,3 +1,192 @@
+<style type="text/css">
+.card-container {
+    padding-bottom: 5px;
+}
+
+.trapezoid-contain{
+  width: 280px;
+  background: transparent;
+  margin: 100px 0px 0px 50px;
+  position: absolute;
+  top: 100px;
+  left: -59px;
+  padding: 0px;
+}
+
+.text { 
+  position:absolute;
+  left:0;
+  right:0;
+  text-align:center;
+  top:2rem;
+  color:white;
+  z-index:9999;
+  font-size: 2rem; 
+  line-height: 20px;
+}
+
+.trapezoid-right {
+  border-top: 35px solid #1abc9c; /*Height*/
+  border-left: 10px solid transparent; /*Left Side*/ 
+  border-right: 10px solid transparent; /*Right Side*/ 
+  width: 100%; 
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius:5px;
+} 
+
+.trapezoid-left {
+  border-bottom: 35px solid #1abc9c; /*Height*/
+  border-left: 10px solid transparent; /*Left Side*/ 
+  border-right: 10px solid transparent; /*Right Side*/ 
+  width: 100%; 
+  margin: 0px;
+  border-radius:5px;
+} 
+
+.work {
+  background: transparent;
+  margin-top: 0;
+}
+.col-sm-3 {
+  margin-bottom: 100px;
+  margin-right: 8px;
+  width: 24%;
+}
+
+.corner-ribbon{
+  z-index: 1;
+  width: 130px;
+  background: #e43;
+  position: absolute;
+  top: 25px;
+  left: -50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.corner-ribbon.top-right{
+  top: 4px;
+  right: -21px;
+  left: auto;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.corner-ribbon.shadow{
+  box-shadow: 0 0 3px rgba(0,0,0,.3);
+}
+
+.corner-ribbon.blue{background: #39d;}
+
+.upper-ribbon-cover {
+  position: absolute;
+  margin-bottom: 3px;
+  background: #E1E0E0;
+  height: 37px;
+  width: 100%;
+  z-index: 2;
+  top: -37px;
+}
+
+.right-ribbon-cover {
+  top: 0;
+  right: -23px;
+  height: 91%;
+  width: 38px;
+  background: #E1E0E0;
+  position: absolute;
+  z-index: 2;    
+}
+
+.row {
+  margin-top: 15px;
+}
+
+img{
+  margin-left: 11px;
+}
+
+</style>
+
+<div class="work-container">
+    <div class="container card-container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
+        <div class="row">
+            <div class="col-sm-6 wow fadeIn animated" style="visibility: visible;width: 100%; animation-name: fadeIn;">
+                <h2>{{category}}</h2>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 10px">
+            
+            <div *ngFor="let event of events | filtere: filter_by" class="col-sm-3 card">
+                <a href="#" (click)="showModal(event)" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">
+                <div class="upper-ribbon-cover"></div>
+                <div class="right-ribbon-cover"></div>
+                <div class="corner-ribbon top-right sticky blue">${{event.Cost}}</div>
+                    <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                        <img src={{event.image}} style="height: 200px">
+                        <div class="trapezoid-contain">
+                            <div class="trapezoid-right"></div>
+                            <div class="trapezoid-left"></div>
+                            <div class="text">{{event.Name}}</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">Buy a spot at</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+                <img src={{currentEvent.image}} style="height: 300px; margin: auto" />
+            </div>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label" style="text-align: center; width: 100%">{{currentEvent.Name}}</label><br>
+          </div>
+          <div class="form-group">
+            <sebm-google-map [latitude]="15.562843" [longitude]="-88.023661"></sebm-google-map><br>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label" style="float: left">Address: {{currentEvent.Address}}</label><br>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label" style="float: left">Cost: $.{{currentEvent.Cost}}</label><br>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label" style="float: left">Type: {{currentEvent.Type}}</label><br>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label" style="float: left">Available: {{currentEvent.availables}}</label><br>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label" style="float: left">Date: {{currentEvent.Date}} at {{currentEvent.BeginsAt}}</label><br>
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label" style="float: left">Description: {{currentEvent.Description}}</label><br>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" (click)="buying()" class="btn btn-primary" data-dismiss="modal">Buy</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
 <div class="work-container">
     <div class="container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
     	<div class="row">
@@ -18,3 +207,4 @@
         </div>
     </div>
 </div>
+-->
