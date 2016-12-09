@@ -8,6 +8,8 @@ import {RegisterComponent} from './components/unlogged/register/register.compone
 import {LoginComponent} from './components/unlogged/login/login.component'
 import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
 import {RegisterEventComponent} from './components/logged/register-event/register_event.component';
+import {ShowEventComponent} from './components/logged/register-event/show-event/show_event.component';
+import {EditEventComponent} from './components/logged/register-event/edit-event/edit_event.component';
 
 import { DataResolver } from './app.resolver';
 
@@ -23,6 +25,8 @@ export const ROUTES: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'profile', component: ProfileComponent},
     {path: 'profile/edit', component: EditProfileComponent},
+    {path: 'register-event/edit-event', component: EditEventComponent},
+    {path: 'register-event/show-event', component: ShowEventComponent},
     {path: 'register-event', component: RegisterEventComponent}
     ] },
   {path: 'verifyingSession', component: CheckSessionComponent},

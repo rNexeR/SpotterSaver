@@ -24,6 +24,9 @@ import {UnloggedHomeComponent} from './components/unlogged/home/home.component';
 import {CheckSessionComponent} from './components/check_session.component';
 import {LoginComponent} from './components/unlogged/login/login.component'
 import {EditProfileComponent} from './components/logged/subcomponents/edit/edit.component';
+import {ShowEventComponent} from './components/logged/register-event/show-event/show_event.component';
+import {EditEventComponent} from './components/logged/register-event/edit-event/edit_event.component';
+
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -58,7 +61,9 @@ const APP_PROVIDERS = [
     LoginComponent,
     ProfileComponent,
     EditProfileComponent,
-    RegisterEventComponent
+    RegisterEventComponent,
+    EditEventComponent,
+    ShowEventComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,
