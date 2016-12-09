@@ -1,148 +1,250 @@
 <style type="text/css">
 .card-container {
-    padding-bottom: 5px;
+padding-bottom: 5px;
 }
-
 .trapezoid-contain{
-  width: 280px;
-  background: transparent;
-  margin: 100px 0px 0px 50px;
-  position: absolute;
-  top: 100px;
-  left: -59px;
-  padding: 0px;
+width: 280px;
+background: transparent;
+margin: 100px 0px 0px 50px;
+position: absolute;
+top: 100px;
+left: -59px;
+padding: 0px;
 }
-
-.text { 
-  position:absolute;
-  left:0;
-  right:0;
-  text-align:center;
-  top:2rem;
-  color:white;
-  z-index:9999;
-  font-size: 2rem; 
-  line-height: 20px;
+.text {
+position:absolute;
+left:0;
+right:0;
+text-align:center;
+top:2rem;
+color:white;
+z-index:9999;
+font-size: 2rem;
+line-height: 20px;
 }
-
 .trapezoid-right {
-  border-top: 35px solid #1abc9c; /*Height*/
-  border-left: 10px solid transparent; /*Left Side*/ 
-  border-right: 10px solid transparent; /*Right Side*/ 
-  width: 100%; 
-  margin-left: 0px;
-  margin-top: 0px;
-  border-radius:5px;
-} 
-
+border-top: 35px solid #1abc9c; /*Height*/
+border-left: 10px solid transparent; /*Left Side*/
+border-right: 10px solid transparent; /*Right Side*/
+width: 100%;
+margin-left: 0px;
+margin-top: 0px;
+border-radius:5px;
+}
 .trapezoid-left {
-  border-bottom: 35px solid #1abc9c; /*Height*/
-  border-left: 10px solid transparent; /*Left Side*/ 
-  border-right: 10px solid transparent; /*Right Side*/ 
-  width: 100%; 
-  margin: 0px;
-  border-radius:5px;
-} 
-
+border-bottom: 35px solid #1abc9c; /*Height*/
+border-left: 10px solid transparent; /*Left Side*/
+border-right: 10px solid transparent; /*Right Side*/
+width: 100%;
+margin: 0px;
+border-radius:5px;
+}
 .work {
-  background: transparent;
-  margin-top: 0;
+background: transparent;
+margin-top: 0;
 }
 .col-sm-3 {
-  margin-bottom: 100px;
-  margin-right: 8px;
-  width: 24%;
+margin-bottom: 100px;
+margin-right: 8px;
+width: 24%;
 }
-
 .corner-ribbon{
-  z-index: 1;
-  width: 130px;
-  background: #e43;
-  position: absolute;
-  top: 25px;
-  left: -50px;
-  text-align: center;
-  line-height: 50px;
-  letter-spacing: 1px;
-  color: #f0f0f0;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+z-index: 1;
+width: 130px;
+background: #e43;
+position: absolute;
+top: 25px;
+left: -50px;
+text-align: center;
+line-height: 50px;
+letter-spacing: 1px;
+color: #f0f0f0;
+transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
 }
-
 .corner-ribbon.top-right{
-  top: 4px;
-  right: -21px;
-  left: auto;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+top: 4px;
+right: -21px;
+left: auto;
+transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
 }
-
 .corner-ribbon.shadow{
-  box-shadow: 0 0 3px rgba(0,0,0,.3);
+box-shadow: 0 0 3px rgba(0,0,0,.3);
 }
-
 .corner-ribbon.blue{background: #39d;}
-
 .upper-ribbon-cover {
-  position: absolute;
-  margin-bottom: 3px;
-  background: #E1E0E0;
-  height: 37px;
-  width: 100%;
-  z-index: 2;
-  top: -37px;
+position: absolute;
+margin-bottom: 3px;
+background: #E1E0E0;
+height: 37px;
+width: 100%;
+z-index: 2;
+top: -37px;
 }
-
 .right-ribbon-cover {
-  top: 0;
-  right: -23px;
-  height: 91%;
-  width: 38px;
-  background: #E1E0E0;
-  position: absolute;
-  z-index: 2;    
+top: 0;
+right: -23px;
+height: 91%;
+width: 38px;
+background: #E1E0E0;
+position: absolute;
+z-index: 2;
 }
-
 .row {
-  margin-top: 15px;
+margin-top: 15px;
 }
-
 img{
-  margin-left: 11px;
+margin-left: 11px;
 }
-
 h2{
-  background: transparent;
+background: transparent;
 }
+.ribbon {
+width: 95%;
+height: 60px;
+left: -15px;
+margin-bottom: 3rem;
+position: relative;
+color: #fff;
+font: 28px/60px sans-serif;
+text-align: center;
+text-transform: uppercase;
+background: #ba89b6;
+margin-bottom: 5rem;
+z-index: 1;
 
+-webkit-animation: main 250ms;
+-moz-animation: main 250ms;
+-ms-animation: main 250ms;
+animation: main 250ms;
+}
+.ribbon span {
+line-height: 6rem;
+background: #ba89b6;
+z-index: 2;
+height: 100%;
+top: 0;
+}
+.ribbon i {
+position: absolute;
+}
+.ribbon i:first-child, .ribbon i:nth-child(2) {
+position: absolute;
+left: -20px;
+bottom: -20px;
+z-index: -1;
+border: 20px solid transparent;
+border-right-color: #804f7c;
+
+-webkit-animation: edge 500ms;
+-moz-animation: edge 500ms;
+-ms-animation: edge 500ms;
+animation: edge 500ms;
+}
+.ribbon i:nth-child(2) {
+left: auto;
+right: -20px;
+border-right-color: transparent;
+border-left-color: #804f7c;
+}
+.ribbon i:nth-child(3), .ribbon i:last-child {
+width: 20px;
+bottom: -20px;
+left: -60px;
+z-index: -2;
+border: 30px solid #804f7c;
+border-left-color: transparent;
+
+-webkit-animation: back 600ms;
+-moz-animation: back 600ms;
+-ms-animation: back 600ms;
+animation: back 600ms;
+
+-webkit-transform-origin: 100% 0;
+-moz-transform-origin: 100% 0;
+-ms-transform-origin: 100% 0;
+transform-origin: 100% 0;
+}
+.ribbon i:last-child {
+bottom: -20px;
+left: 1063px;
+right: -60px;
+border: 30px solid #986794;
+border-right-color: transparent;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+transform-origin: 0 0;
+}
+p {
+text-align: center;
+color: #aaa;
+}
+/* animations */
+@-webkit-keyframes main {
+0% { -webkit-transform: scaleX(0); }
+100% { -webkit-transform: scaleX(1); }
+}
+@-webkit-keyframes edge {
+0%, 50% { -webkit-transform: scaleY(0); }
+100% { -webkit-transform: scaleY(1); }
+}
+@-webkit-keyframes back {
+0%, 75% { -webkit-transform: scaleX(0); }
+100% { -webkit-transform: scaleX(1); }
+}
+@-moz-keyframes main {
+0% { -moz-transform: scaleX(0); }
+100% { -moz-transform: scaleX(1); }
+}
+@-moz-keyframes edge {
+0%, 50% { -moz-transform: scaleY(0); }
+100% { -moz-transform: scaleY(1); }
+}
+@-moz-keyframes back {
+0%, 75% { -moz-transform: scaleX(0); }
+100% { -moz-transform: scaleX(1); }
+}
+@keyframes main {
+0% { transform: scaleX(0); }
+100% { transform: scaleX(1); }
+}
+@keyframes edge {
+0%, 50% { transform: scaleY(0); }
+100% { transform: scaleY(1); }
+}
+@keyframes back {
+0%, 75% { transform: scaleX(0); }
+100% { transform: scaleX(1); }
+}
 </style>
-
 <div class="work-container">
-    <div class="container card-container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
-        <div class="row">
-            <div class="col-sm-6 wow fadeIn animated" style="visibility: visible;width: 100%; animation-name: fadeIn; z-index: 10">
-                <h2>{{category}}</h2>
-            </div>
-        </div>
-        <div class="row" style="padding-bottom: 10px; padding-top: 10px">
-            
-            <div *ngFor="let event of events | filtere: filter_by" class="col-sm-3 card">
-                <a href="#" (click)="showModal(event)" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">
-                <div class="upper-ribbon-cover"></div>
-                <div class="right-ribbon-cover"></div>
-                <div class="corner-ribbon top-right sticky blue">${{event.Cost}}</div>
-                    <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-                        <img src={{event.image}} style="height: 200px">
-                        <div class="trapezoid-contain">
-                            <div class="trapezoid-right"></div>
-                            <div class="trapezoid-left"></div>
-                            <div class="text">{{event.Name}}</div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+  <div class="container card-container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
+    <div class="ribbon col-sm-6 wow fadeIn animated">
+      <span class="text">{{category}}</span>
+      <i></i>
+      <i></i>
     </div>
+    <div class="row" style="padding-bottom: 10px; padding-top: 10px">
+      
+      <div *ngFor="let event of events | filtere: filter_by" class="col-sm-3 card">
+        <a href="#" (click)="showModal(event)" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">
+          <div class="upper-ribbon-cover"></div>
+          <div class="right-ribbon-cover"></div>
+          <div class="corner-ribbon top-right sticky blue">${{event.Cost}}</div>
+          <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+            <img src={{event.image}} style="height: 200px">
+            <div class="trapezoid-contain">
+              <div class="trapezoid-right"></div>
+              <div class="trapezoid-left"></div>
+              <div class="text">{{event.Name}}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
@@ -154,9 +256,9 @@ h2{
       </div>
       <div class="modal-body">
         <form>
-            <div class="form-group">
-                <img src={{currentEvent.image}} style="height: 300px; margin: auto" />
-            </div>
+          <div class="form-group">
+            <img src={{currentEvent.image}} style="height: 300px; margin: auto" />
+          </div>
           <div class="form-group">
             <label for="recipient-name" class="control-label" style="text-align: center; width: 100%">{{currentEvent.Name}}</label><br>
           </div>
@@ -192,23 +294,23 @@ h2{
 </div>
 <!--
 <div class="work-container">
-    <div class="container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
-    	<div class="row">
-            <div class="col-sm-6 wow fadeIn animated" style="visibility: visible;width: 100%; animation-name: fadeIn;">
-                <h2>{{category}}</h2>
-            </div>
-        </div>
-        <div class="row" style="padding-bottom: 10px">
-        
-        	<div *ngFor="let event of events | filtere: filter_by" class="col-sm-3">
-                <a href="#">
-	                <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-	                    <img src={{event.image}} style="height: 200px">
-	                    <h3>{{event.Name}}</h3>
-	                </div>
-                </a>
-            </div>
-        </div>
+  <div class="container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
+    <div class="row">
+      <div class="col-sm-6 wow fadeIn animated" style="visibility: visible;width: 100%; animation-name: fadeIn;">
+        <h2>{{category}}</h2>
+      </div>
     </div>
+    <div class="row" style="padding-bottom: 10px">
+      
+      <div *ngFor="let event of events | filtere: filter_by" class="col-sm-3">
+        <a href="#">
+          <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+            <img src={{event.image}} style="height: 200px">
+            <h3>{{event.Name}}</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 -->
