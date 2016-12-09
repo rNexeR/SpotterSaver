@@ -11,15 +11,20 @@ import {RegisterEventComponent} from './components/register-event/register_event
 import {ChatroomComponent} from './components/chatroom/chatroom.component';
 import {FilterComponent} from './components/filter/filter.component';
 import {PaymentComponent} from './components/payment/payment.component';
+import {AboutComponent} from './components/about/about.component';
+import {ContactComponent} from './components/contact/contact.component';
 
 import { DataResolver } from './app.resolver';
 
 
 export const ROUTES: Routes = [
-  { path: '',      component:  CheckSessionComponent},
+  { path: '',      component:  HomeComponent},
+  { path: 'home',      component:  HomeComponent},
 	{ path: 'login',  component: LoginComponent },
   { path: 'search/:searched', component: FilterComponent},
 	{ path: 'register',  component: RegisterComponent },
+  { path: 'about',  component: AboutComponent },
+  { path: 'contact',  component: ContactComponent },
   { path: 'logged', component: LoggedComponent, children: [
     {path: '', component: HomeComponent},
     {path: 'search/:searched', component: FilterComponent},
@@ -27,9 +32,9 @@ export const ROUTES: Routes = [
     {path: 'profile', component: ProfileComponent},
     {path: 'profile/edit', component: EditProfileComponent},
     {path: 'register-event', component: RegisterEventComponent},
-    {path: 'payment', component: PaymentComponent}
+    {path: 'payment', component: PaymentComponent},
+    {path: 'messages', component: ChatroomComponent}
     ] },
-  { path: 'try', component: ChatroomComponent},
   {path: 'verifyingSession', component: CheckSessionComponent},
   { path: '**', redirectTo: 'unlogged'}
 ];

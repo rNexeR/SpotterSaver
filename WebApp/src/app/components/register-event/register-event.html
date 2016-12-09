@@ -1,77 +1,112 @@
+<style type="text/css" media="screen">
+    .form-control{
+        background-color: white;
+        width: 100%;
+    }
+
+    label{
+        align-items: left;
+        text-align: left;
+        width: 100%;
+    }
+
+    .dropdown{
+        align-items: left;
+        text-align: left;
+    }
+
+    h3{
+        margin-bottom: 30px;
+    }
+</style>
+
 <div class="body">
-    <div class="container-center">
-        <div class="row">
+    <div class="container">
+        <div class="row contact-form wow fadeInLeft" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252; padding: 5%">
             <form (ngSubmit)="createEvent()">
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <h3>Create new Event</h3>
+                    </div>
+                    <div class="form-top-right">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </div>
                
-                <div class="form-group">
-                    <label style="float: left">Event Name:</label>
-                    <div class="form-control">
-                        <input class="form-control" type="text" required>
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label >Event Name:</label>
+                        <input class="form-control" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Event Address:</label>
-                    <div class="form-control">
-                        <input class="form-control" type="text" required>
+                    <div class="form-group">
+                        <label >Event Address:</label>
+                        <input class="form-control" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Cost:</label>
-                    <div class="form-control">
+                    <div class="form-group">
+                        <label >Cost:</label>
                         <input class="form-control" type="number" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Type: </label>
-                    <div class="form-control">
-                        <input class="form-control" type="text" required>
+                    <div class="form-group">
+                        <label>Type: </label>
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Select
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Table</a></li>
+                            <li><a href="#">Person</a></li>
+                          </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Capacity:</label>
-                    <div class="form-control">
+                    <div class="form-group">
+                        <label >Capacity:</label>
                         <input class="form-control" type="number" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Availables:</label>
-                    <div class="form-control">
+                    <div class="form-group">
+                        <label >Availables:</label>
                         <input class="form-control" type="number" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Category:</label>
-                    <div class="form-control">
-                        <input class="form-control" type="text" required>
+               </div>
+
+               <div class="col-md-6">
+                    <div class="form-group">
+                        <label >Category:</label>
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Select
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Night Life</a></li>
+                            <li><a href="#">Teather</a></li>
+                            <li><a href="#">Restaurants</a></li>
+                            <li><a href="#">Socials</a></li>
+                          </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Date:</label>
-                    <div class="form-control">
+                    <div class="form-group">
+                        <label >Date:</label>
                         <input class="form-control" type="date" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Begins at:</label>
-                    <div class="form-control">
-                        <input class="form-control" type="time" required>
+                    <div class="form-group">
+                        <label >Begins at:</label>
+                            <input class="form-control" type="time" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Description</label>
-                    <div class="form-control">
-                        <input class="form-control" type="text" required>
+                    <div class="form-group">
+                        <label >Description</label>
+                            <input class="form-control" required>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label style="float: left">Image</label>
-                    <div class="form-control">
-                        <input class="form-control" type="file" required>
+                    <div class="form-group">
+                        <label >Image</label>
+                            <input class="form-control" type="file" required>
                     </div>
-                </div>
+               </div>
                 
                 <br>
-                <input type="submit" class="btn btn-primary" value="Save">
+                <div class="form-group col-md-12">
+                    <input type="submit" class="btn btn-primary" value="Save">
+                </div>
             
             </form>
         </div>
