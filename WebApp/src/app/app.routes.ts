@@ -17,7 +17,8 @@ import { DataResolver } from './app.resolver';
 
 
 export const ROUTES: Routes = [
-  { path: '',      component:  CheckSessionComponent},
+  { path: '',      component:  HomeComponent},
+  { path: 'home',      component:  HomeComponent},
 	{ path: 'login',  component: LoginComponent },
   { path: 'search/:searched', component: FilterComponent},
 	{ path: 'register',  component: RegisterComponent },
