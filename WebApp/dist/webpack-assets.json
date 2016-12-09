@@ -1,11 +1,11 @@
 {
   "vendor": {
-    "js": "vendor.bundle.js"
+    "js": "/SpotterSaver/vendor.bundle.js"
   },
   "main": {
-    "js": "main.bundle.js"
+    "js": "/SpotterSaver/main.bundle.js"
   },
   "polyfills": {
-    "js": "polyfills.bundle.js"
+    "js": "/SpotterSaver/polyfills.bundle.js"
   }
 }

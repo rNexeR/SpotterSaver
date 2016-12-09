@@ -1,4 +1,9 @@
-[
+webpackJsonpac__name_([2],{
+
+/***/ 765:
+/***/ function(module, exports) {
+
+module.exports = [
 	{
 		"Name": "Bo Walters",
 		"Company": "",
@@ -11,7 +16,10 @@
 		"Agree": "True",
 		"Contact": "1602070859599",
 		"Events": [],
-		"Reservations": ["Halloween Party", "Christmas Dinner"]
+		"Reservations": [
+			"Halloween Party",
+			"Christmas Dinner"
+		]
 	},
 	{
 		"Name": "Pascale Mccoy",
@@ -25,7 +33,10 @@
 		"Agree": "True",
 		"Contact": "1659102975099",
 		"Events": [],
-		"Reservations": ["San Valentin's Day", "San Valentin's Day Dinner"]
+		"Reservations": [
+			"San Valentin's Day",
+			"San Valentin's Day Dinner"
+		]
 	},
 	{
 		"Name": "Camilla Mueller",
@@ -39,7 +50,9 @@
 		"Agree": "False",
 		"Contact": "1681050724299",
 		"Events": [],
-		"Reservations": ["Prom"]
+		"Reservations": [
+			"Prom"
+		]
 	},
 	{
 		"Name": "Fulton Newman",
@@ -53,7 +66,9 @@
 		"Agree": "False",
 		"Contact": "1636080757699",
 		"Events": [],
-		"Reservations": ["Prom"]
+		"Reservations": [
+			"Prom"
+		]
 	},
 	{
 		"Name": "Stacey Aguirre",
@@ -67,7 +82,9 @@
 		"Agree": "True",
 		"Contact": "1628012556399",
 		"Events": [],
-		"Reservations": ["Prom"]
+		"Reservations": [
+			"Prom"
+		]
 	},
 	{
 		"Name": "Melinda Osborn",
@@ -80,7 +97,11 @@
 		"Bank": "Sed Eu Ltd",
 		"Agree": "True",
 		"Contact": "1621081618799",
-		"Events": ["Prom", "Halloween Party", "Christmas Dinner"],
+		"Events": [
+			"Prom",
+			"Halloween Party",
+			"Christmas Dinner"
+		],
 		"Reservations": []
 	},
 	{
@@ -94,8 +115,15 @@
 		"Bank": "Interdum Nunc Sollicitudin Consulting",
 		"Agree": "False",
 		"Contact": "1693051630199",
-		"Events": ["San Valentin's Day", "San Valentin's Day Dinner", "Thanks Given Day"],
-		"Reservations": ["Saybe: The Hunchback of Notre Dame", "Saybe: Mamma Mia"]
+		"Events": [
+			"San Valentin's Day",
+			"San Valentin's Day Dinner",
+			"Thanks Given Day"
+		],
+		"Reservations": [
+			"Saybe: The Hunchback of Notre Dame",
+			"Saybe: Mamma Mia"
+		]
 	},
 	{
 		"Name": "Eden Adams",
@@ -108,8 +136,13 @@
 		"Bank": "Arcu Nunc Mauris Institute",
 		"Agree": "False",
 		"Contact": "1656032760599",
-		"Events": ["Saybe: Mamma Mia", "Saybe: The Hunchback of Notre Dame"],
-		"Reservations": ["Live Music Night"]
+		"Events": [
+			"Saybe: Mamma Mia",
+			"Saybe: The Hunchback of Notre Dame"
+		],
+		"Reservations": [
+			"Live Music Night"
+		]
 	},
 	{
 		"Name": "Kuame May",
@@ -122,7 +155,9 @@
 		"Bank": "Velit Eu Corp.",
 		"Agree": "True",
 		"Contact": "1624052565399",
-		"Events": ["Cultural Sanpedrano: Cats"],
+		"Events": [
+			"Cultural Sanpedrano: Cats"
+		],
 		"Reservations": []
 	},
 	{
@@ -136,7 +171,16 @@
 		"Bank": "Tincidunt Associates",
 		"Agree": "True",
 		"Contact": "1671011309199",
-		"Events": ["Keny's Fifteen Birthday", "Live Music Night", "Karaoke Night"],
+		"Events": [
+			"Keny's Fifteen Birthday",
+			"Live Music Night",
+			"Karaoke Night"
+		],
 		"Reservations": []
 	}
-]
+];
+
+/***/ }
+
+});
+//# sourceMappingURL=2.map

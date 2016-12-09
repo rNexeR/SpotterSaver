@@ -6,9 +6,14 @@ th{
     text-align: center;
     font-style: bold;
 }
+
+.blue-bg{
+    background-color: #133C6A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 /*luis aqui*/
 #imaginary_container{
-    margin-bottom: 5%; /* Don't copy this */
     background-color: white !important;
 }
 .stylish-input-group .input-group-addon{
@@ -162,7 +167,24 @@ th{
   border-radius: 15px;
 }
 
+.nav-fixed {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.body-home {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .body {
+    margin-top: 5%;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     color: #888;
@@ -350,7 +372,8 @@ ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #133C6A
 .navbar-brand {
 	width: 300px;
 	height: 106px;
-	/*background: url(../img/logo_unitec_small.png) left center no-repeat;*/
+	background: url(../img/spottersaverh.png) left center no-repeat;
+    background-size: 300px;
 	text-indent: -99999px;
 }
 
