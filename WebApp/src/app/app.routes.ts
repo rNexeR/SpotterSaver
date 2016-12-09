@@ -29,9 +29,9 @@ export const ROUTES: Routes = [
     {path: 'home', component: HomeComponent},
     {path: 'profile', component: ProfileComponent},
     {path: 'profile/edit', component: EditProfileComponent},
-    {path: 'register-event', component: RegisterEventComponent}
+    {path: 'register-event', component: RegisterEventComponent},
+    {path: 'messages', component: ChatroomComponent}
     ] },
-  { path: 'try', component: ChatroomComponent},
   {path: 'verifyingSession', component: CheckSessionComponent},
   { path: '**', redirectTo: 'unlogged'}
 ];
