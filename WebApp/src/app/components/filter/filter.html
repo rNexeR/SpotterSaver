@@ -8,7 +8,7 @@
 
 </div>-->
 <style type="text/css">
-.container {
+.card-container {
     padding-bottom: 57px;
 }
 
@@ -61,10 +61,6 @@
   margin-bottom: 100px;
   margin-right: 8px;
   width: 24%;
-}
-
-.col-sm-3:hover {
-  background: #000;
 }
 
 .corner-ribbon{
@@ -120,12 +116,16 @@
   margin-top: 15px;
 }
 
+img{
+  margin-left: 11px;
+}
+
 </style>
 
 
-
+<search-bar [search_text]="searched" ></search-bar>
 <div class="work-container">
-    <div class="container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
+    <div class="container card-container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
     	<div class="row">
             <div class="col-sm-6 wow fadeIn animated" style="visibility: visible;width: 100%; animation-name: fadeIn;">
                 <h2></h2>
@@ -137,7 +137,7 @@
                 <a href="#">
                 <div class="upper-ribbon-cover"></div>
                 <div class="right-ribbon-cover"></div>
-                <div class="corner-ribbon top-right sticky blue">$24.00</div>
+                <div class="corner-ribbon top-right sticky blue">${{event.Cost}}</div>
 	                <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
 	                    <img src={{event.image}} style="height: 200px">
                         <div class="trapezoid-contain">

@@ -14,6 +14,6 @@ export class SearchBarComponent implements OnInit {
   }
 
   search(){
-  	this._router.navigate(['/logged/search', this.search_text]);
+  	this._router.navigate(['/search', this.search_text]);
   }
 }
