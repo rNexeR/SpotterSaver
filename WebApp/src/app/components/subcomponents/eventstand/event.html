@@ -1,0 +1,20 @@
+<div class="work-container">
+    <div class="container" style="background-color: #E1E0E0; padding-top: 10px; box-shadow: 10px 10px 5px #525252;">
+    	<div class="row">
+            <div class="col-sm-6 wow fadeIn animated" style="visibility: visible;width: 100%; animation-name: fadeIn;">
+                <h2>{{category}}</h2>
+            </div>
+        </div>
+        <div class="row" style="padding-bottom: 10px">
+        
+        	<div *ngFor="let event of events | filtere: filter_by" class="col-sm-3">
+                <a href="#">
+	                <div class="work wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+	                    <img src={{event.image}} style="height: 200px">
+	                    <h3>{{event.Name}}</h3>
+	                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

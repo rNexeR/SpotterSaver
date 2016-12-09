@@ -31,6 +31,9 @@ import {ChatSidebarComponent} from './components/subcomponents/chat-sidebar/chat
 import {ChatAreaComponent} from './components/subcomponents/chat-area/chat_area.component';
 import {UnloggedNavBarComponent} from './components/subcomponents/unloggednavbar/unloggednavbar.component';
 import {LoggedNavBarComponent} from './components/subcomponents/loggednavbar/loggednavbar.component';
+import {EventStandComponent} from './components/subcomponents/eventstand/eventstand.component';
+import {AboutComponent} from './components/about/about.component';
+import {ContactComponent} from './components/contact/contact.component';
 //import {} from './components/.component';
 
 import {ToasterModule, ToasterService} from 'angular2-toaster/angular2-toaster';
@@ -79,7 +82,10 @@ const APP_PROVIDERS = [
     ChatSidebarComponent,
     ChatAreaComponent,
     UnloggedNavBarComponent,
-    LoggedNavBarComponent
+    LoggedNavBarComponent,
+    EventStandComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [ // import Angular's modules
     BrowserModule,

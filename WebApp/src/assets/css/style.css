@@ -364,7 +364,8 @@ ul.navbar-nav li.active .dropdown-menu > .active > a:focus { background: #133C6A
 .navbar-brand {
 	width: 300px;
 	height: 106px;
-	/*background: url(../img/logo_unitec_small.png) left center no-repeat;*/
+	background: url(../img/spottersaverh.png) left center no-repeat;
+    background-size: 300px;
 	text-indent: -99999px;
 }
 
