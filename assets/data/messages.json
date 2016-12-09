@@ -1,0 +1,53 @@
+{
+	"Bo Walters":
+		[
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:40 PM",
+			"self": false},
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:50 PM",
+			"self": true}
+		],
+	"Pascale Mccoy":
+		[
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:40 PM",
+			"self": false},
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:50 PM",
+			"self": true}
+		],
+	"Camilla Mueller":
+		[
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:40 PM",
+			"self": false},
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:50 PM",
+			"self": true}
+		],
+	"Fulton Newman":
+		[
+			{"body":"Hola que tal?",
+			"hour":"9:40 PM",
+			"self": false},
+			{"body":"bien y tu que tal?",
+			"hour":"9:50 PM",
+			"self": true},
+			{"body":"aqui trabajando",
+			"hour":"10:00 PM",
+			"self": false},
+			{"body":"mmm que bueno, te cuento que ganamos el Pitch Business Morning",
+			"hour":"10:05 PM",
+			"self": true}
+		],
+	"Stacey Aguirre":
+		[
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:40 PM",
+			"self": false},
+			{"body":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia.",
+			"hour":"9:50 PM",
+			"self": true}
+		]
+}
